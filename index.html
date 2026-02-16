@@ -1,2 +1,83 @@
-<h1>ยินดีต้อนรับสู่โลกของ DevOps</h1>
-<p>โปรเจกต์นี้กำลังรันด้วยระบบ CI/CD อัตโนมัติ eiei</p>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>DevOps Multiverse</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #ff0080);
+            overflow: hidden;
+            color: white;
+            text-align: center;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 0 40px #ff00ff;
+            backdrop-filter: blur(10px);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(90deg, #00f0ff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px #ff00ff;
+        }
+
+        p {
+            font-size: 1.3rem;
+            margin-top: 20px;
+            color: #f8f8f8;
+        }
+
+        .badge {
+            margin-top: 30px;
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(90deg, #ff0080, #7928ca);
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 0 15px #ff00ff;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Spider web effect */
+        body::before {
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+            background-size: 40px 40px;
+            animation: moveBg 20s linear infinite;
+        }
+
+        @keyframes moveBg {
+            from { transform: translate(0,0); }
+            to { transform: translate(-200px,-200px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🕸️ ยินดีต้อนรับสู่ DevOps Multiverse 🕷️</h1>
+        <p>โปรเจกต์นี้กำลังรันด้วยระบบ CI/CD อัตโนมัติ ✨</p>
+        <div class="badge">Powered by Docker & Nginx 🚀</div>
+    </div>
+</body>
+</html>
